@@ -10,11 +10,11 @@ Template Name: Left Sidebar Page
             
             	<?php get_sidebar(); // sidebar 1 ?>
 			
-				<div id="main" class="col col-lg-8 clearfix" role="main">
+				<div id="main" class="col col-lg-8 clearfix" role="main"><!-- end article tpc -->
 
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
-					<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
+					<article id="post-<?php the_ID(); ?>" <?php post_class('secondary-degradate round-corner-lg clearfix'); ?> role="article">
 						
 						<header>
 							

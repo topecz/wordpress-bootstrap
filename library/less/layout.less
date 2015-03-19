@@ -11,7 +11,7 @@ WP-Bootstrap - Layout
 
 body{
 	// This is to account for the fixed navbar
-	padding-top: 60px;
+	padding-top: 0px;
 }
 
 /* Admin Top Navigation fix */
@@ -63,4 +63,96 @@ input, textarea, select, .uneditable-input {
 .footer-links .menu li{
 	float: left;
 	margin-left: 10px;
+}
+
+/* topec */
+body > header > div:nth-child(1) > div > h3 {
+	color: @gray-lighterer;
+	margin-top: @padding-small-vertical;
+	font-weight: bolder;
+}
+.main-degradate {
+  background: @brand-primary_light;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZlY2QyYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmYTllMGMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, @brand-primary_light 0%, @brand-primary-dark 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@brand-primary_light), color-stop(100%,@brand-primary-dark));
+  background: -webkit-linear-gradient(top, @brand-primary_light 0%,@brand-primary-dark 100%);
+  background: -o-linear-gradient(top, @brand-primary_light 0%,@brand-primary-dark 100%);
+  background: -ms-linear-gradient(top, @brand-primary_light 0%,@brand-primary-dark 100%);
+  background: linear-gradient(to bottom, @brand-primary_light 0%,@brand-primary-dark 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@brand-primary_light, endColorstr=@brand-primary-dark,GradientType=0 );
+}
+.secondary-degradate {
+  background: @gray-lighterer;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y0ZjRmNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjYmNiY2IiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, @gray-lighterer 0%, @gray-lighter 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@gray-lighterer), color-stop(100%,@gray-lighter));
+  background: -webkit-linear-gradient(top, @gray-lighterer 0%,@gray-lighter 100%);
+  background: -o-linear-gradient(top, @gray-lighterer 0%,@gray-lighter 100%);
+  background: -ms-linear-gradient(top, @gray-lighterer 0%,@gray-lighter 100%);
+  background: linear-gradient(to bottom, @gray-lighterer 0%,@gray-lighter 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@gray-lighterer, endColorstr=@gray-lighter,GradientType=0 );
+}
+.main-degradate-inverse {
+  background: @brand-primary-dark;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZhOWUwYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZWNkMmMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, @brand-primary-dark 0%, @brand-primary_light 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@brand-primary-dark), color-stop(100%,@brand-primary_light));
+  background: -webkit-linear-gradient(top, @brand-primary-dark 0%,@brand-primary_light 100%);
+  background: -o-linear-gradient(top, @brand-primary-dark 0%,@brand-primary_light 100%);
+  background: -ms-linear-gradient(top, @brand-primary-dark 0%,@brand-primary_light 100%);
+  background: linear-gradient(to bottom, @brand-primary-dark 0%,@brand-primary_light 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@brand-primary-dark, endColorstr=@brand-primary_light,GradientType=0 );
+}
+.secondary-degradate-inverse {
+  background: @gray-lighterer;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2NiY2JjYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmNGY0ZjQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, rgba(203,203,203,1) 0%, rgba(244,244,244,1) 100%);
+  background: -moz-linear-gradient(top, @gray-lighter 0%, @gray-lighterer 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@gray-lighterer), color-stop(100%,@gray-lighter));
+  background: -webkit-linear-gradient(top, @gray-lighter 0%,@gray-lighterer 100%);
+  background: -o-linear-gradient(top, @gray-lighter 0%,@gray-lighterer 100%);
+  background: -ms-linear-gradient(top, @gray-lighter 0%,@gray-lighterer 100%);
+  background: linear-gradient(to bottom, @gray-lighter 0%,@gray-lighterer 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@gray-lighter, endColorstr=@gray-lighterer,GradientType=0 );
+}
+.tpc-image-header {
+  margin-top: -65px;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+  .secondary-degradate-inverse;
+}
+div#sidebar1 {
+	padding-top: @panel-body-padding;
+}
+#search-2 > form > fieldset > div.input-group {
+	width: 100%;
+}
+.round-corner-lg {
+	border-radius: @border-radius-large;
+}
+.widget>ul>li {
+ 	list-style-type: none;
+	border-bottom: solid 1.2px @gray-light;
+}
+#calendar_wrap {
+	.secondary-degradate;
+}
+#wp-calendar thead tr {
+  .main-degradate;
+}
+#wp-calendar thead tr th {
+	text-align: center;
+}
+#wp-calendar tfoot tr {
+	.secondary-degradate-inverse;
+}
+#inner-footer>div#widget-footer {
+background-color: @gray;
+}
+#inner-footer>nav {
+background-color: @gray-lighter;
+}
+.tpc-design {
+background-color: @gray-lighter;
 }

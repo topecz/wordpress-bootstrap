@@ -34,36 +34,57 @@
 	</head>
 	
 	<body <?php body_class(); ?>>
-				
+
 		<header role="banner">
 				
-			<div class="navbar navbar-default navbar-fixed-top">
-				<div class="container">
-          
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
+			<div class="row clearfix">
+				<div class="col-md-12 column main-degradate hidden-sm">
+					<center>						
+						<img alt="140x140" src="http://lorempixel.com/140/140/" class="img-rounded" />
+					</center>
+					<h3 class="text-center">
+						<?php bloginfo('name'); ?>
+					</h3>
+				</div>
+			</div>
+			<div class="row clearfix">
+				<div class="navbar navbar-default navbar-static-top secondary-degradate">
+					<div class="container">
+	          
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
 
-						<a class="navbar-brand" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
-					</div>
+							<a class="navbar-brand" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>"><img alt="140x140" src="http://lorempixel.com/140/140/" class="img-rounded hidden-sm tpc-image-header" /></a>
+						</div>
 
-					<div class="collapse navbar-collapse navbar-responsive-collapse">
-						<?php wp_bootstrap_main_nav(); // Adjust using Menus in Wordpress Admin ?>
+						<div class="collapse navbar-collapse navbar-responsive-collapse">
+							<?php wp_bootstrap_main_nav(); // Adjust using Menus in Wordpress Admin ?>
 
-						<?php //if(of_get_option('search_bar', '1')) {?>
-						<form class="navbar-form navbar-right" role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
-							<div class="form-group">
-								<input name="s" id="s" type="text" class="search-query form-control" autocomplete="off" placeholder="<?php _e('Search','wpbootstrap'); ?>">
-							</div>
-						</form>
-						<?php //} ?>
-					</div>
+							<?php //if(of_get_option('search_bar', '1')) {?>
+							<form class="navbar-form navbar-right" role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
+								<div class="form-group">
+									<input name="s" id="s" type="text" class="search-query form-control" autocomplete="off" placeholder="<?php _e('Search','wpbootstrap'); ?>">
+								</div>
+							</form>
+							<?php //} ?>
 
-				</div> <!-- end .container -->
-			</div> <!-- end .navbar -->
+							<ul class="nav navbar-nav navbar-right">
+								<li>
+									<a href="#">Registro</a>
+								</li>
+								<li>
+									<a href="#">Login</a>
+								</li>
+							</ul>
+						</div>
+
+					</div> <!-- end .container -->
+				</div> <!-- end .navbar -->
+			</div> <!-- row .clearfix -->
 		
 		</header> <!-- end header -->
 		

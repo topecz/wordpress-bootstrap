@@ -120,7 +120,7 @@ require_once('library/shortcodes.php');
 // Custom Backend Footer
 add_filter('admin_footer_text', 'wp_bootstrap_custom_admin_footer');
 function wp_bootstrap_custom_admin_footer() {
-	echo '<span id="footer-thankyou">Developed by <a href="http://320press.com" target="_blank">320press</a></span>. Built using <a href="http://themble.com/bones" target="_blank">Bones</a>.';
+	echo '<span id="footer-thankyou">Developed by <a href="http://macfaen.es" target="_blank">macfaen.es</a></span>. Built using <a href="http://themble.com/bones" target="_blank">Bones</a>.';
 }
 
 // adding it to the admin area
@@ -166,7 +166,7 @@ function wp_bootstrap_register_sidebars() {
   	'description' => 'Used on every page BUT the homepage page template.',
   	'before_widget' => '<div id="%1$s" class="widget %2$s">',
   	'after_widget' => '</div>',
-  	'before_title' => '<h4 class="widgettitle">',
+  	'before_title' => '<h4 class="widgettitle main-degradate"><span class="glyphicon glyphicon-play" aria-hidden="true"></span> ',
   	'after_title' => '</h4>',
   ));
     
@@ -176,7 +176,7 @@ function wp_bootstrap_register_sidebars() {
   	'description' => 'Used only on the homepage page template.',
   	'before_widget' => '<div id="%1$s" class="widget %2$s">',
   	'after_widget' => '</div>',
-  	'before_title' => '<h4 class="widgettitle">',
+  	'before_title' => '<h4 class="widgettitle main-degradate"><span class="glyphicon glyphicon-play" aria-hidden="true"></span> ',
   	'after_title' => '</h4>',
   ));
     
@@ -185,7 +185,7 @@ function wp_bootstrap_register_sidebars() {
     'name' => 'Footer 1',
     'before_widget' => '<div id="%1$s" class="widget col-sm-4 %2$s">',
     'after_widget' => '</div>',
-    'before_title' => '<h4 class="widgettitle">',
+    'before_title' => '<h4 class="widgettitle main-degradate"><span class="glyphicon glyphicon-play" aria-hidden="true"></span> ',
     'after_title' => '</h4>',
   ));
 
@@ -194,7 +194,7 @@ function wp_bootstrap_register_sidebars() {
     'name' => 'Footer 2',
     'before_widget' => '<div id="%1$s" class="widget col-sm-4 %2$s">',
     'after_widget' => '</div>',
-    'before_title' => '<h4 class="widgettitle">',
+    'before_title' => '<h4 class="widgettitle main-degradate"><span class="glyphicon glyphicon-play" aria-hidden="true"></span> ',
     'after_title' => '</h4>',
   ));
 
@@ -203,7 +203,7 @@ function wp_bootstrap_register_sidebars() {
     'name' => 'Footer 3',
     'before_widget' => '<div id="%1$s" class="widget col-sm-4 %2$s">',
     'after_widget' => '</div>',
-    'before_title' => '<h4 class="widgettitle">',
+    'before_title' => '<h4 class="widgettitle main-degradate"><span class="glyphicon glyphicon-play" aria-hidden="true"></span> ',
     'after_title' => '</h4>',
   ));
     
@@ -548,7 +548,7 @@ add_filter('nav_menu_css_class', 'wp_bootstrap_add_active_class', 10, 2 );
 if( !function_exists("wp_bootstrap_theme_styles") ) {  
     function wp_bootstrap_theme_styles() { 
         // This is the compiled css file from LESS - this means you compile the LESS file locally and put it in the appropriate directory if you want to make any changes to the master bootstrap.css.
-        wp_register_style( 'wpbs', get_template_directory_uri() . '/library/dist/css/styles.f6413c85.min.css', array(), '1.0', 'all' );
+        wp_register_style( 'wpbs', get_template_directory_uri() . '/library/dist/css/styles.4fd57413.min.css', array(), '1.0', 'all' );
         wp_enqueue_style( 'wpbs' );
 
         // For child themes
